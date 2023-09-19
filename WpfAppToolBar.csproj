@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <StartupObject>WpfAppToolBar.App</StartupObject>
+    <ApplicationIcon />
+    <Win32Resource />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Bilder\UngerLogo.ico" />
+    <None Remove="Bilder\UngerLogo.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Bilder\UngerLogo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Bilder\UngerLogo.ico" />
+  </ItemGroup>
+
+</Project>
